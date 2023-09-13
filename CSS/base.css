@@ -1,3 +1,60 @@
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+}
+.header .div__header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header .div__header .header__img {
+  margin: 10px;
+  width: 80px;
+  border-radius: 30px;
+}
+.header .div__header .header__titulo {
+  margin: 0px;
+}
+.header .div__header .header__titulo .titulo__animation {
+  transition: all 0.5s;
+}
+.header .div__header .header__titulo .titulo__animation:hover {
+  color: red;
+  transform: translateX(10px);
+}
+.header .header__lista {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .header__lista .ul__list {
+  list-style: none;
+  transition: transform 0.5s;
+}
+.header .header__lista .ul__list a {
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.5s;
+  color: white;
+}
+.header .header__lista .ul__list a:hover {
+  color: red;
+}
+.header .header__lista .ul__list:hover {
+  transform: scale(1.5);
+}
 
+* {
+  margin: 0px auto;
+  padding: 0px auto;
+}
 
 /*# sourceMappingURL=base.css.map */

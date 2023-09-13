@@ -1,0 +1,71 @@
+@import 'variables';
+
+@mixin sizes {
+    height: 100px;
+    width: 100%;
+}
+
+.header {
+
+    @include sizes;
+    background-color: $color-header;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: $color-text-header;
+
+    .div__header { 
+        @include sizes;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .header__img {
+            margin: 10px;
+            width: 80px;
+            border-radius: 30px;
+        }
+
+        .header__titulo {
+            margin: 0px;
+
+            .titulo__animation {
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $color-hover;
+                    transform: translateX(10px);
+                }
+            }
+        }
+    }
+
+    .header__lista {
+        @include sizes;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .ul__list {
+            list-style: none;
+            transition: transform 0.5s;
+            
+            a {
+                font-size: 16px; 
+                text-decoration: none;
+                transition: color 0.5s; 
+                color: $color-text-header;
+
+                &:hover {
+                    color: $color-hover;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.5);
+            }
+
+            
+            
+        }
+    }
+}
