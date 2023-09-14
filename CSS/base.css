@@ -26,7 +26,8 @@
 }
 .header .div__header .header__titulo .titulo__animation:hover {
   color: red;
-  transform: translateX(10px);
+  position: absolute;
+  transform: translateX(50px);
 }
 .header .header__lista {
   height: 100px;
@@ -34,6 +35,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0px;
 }
 .header .header__lista .ul__list {
   list-style: none;
@@ -50,6 +52,56 @@
 }
 .header .header__lista .ul__list:hover {
   transform: scale(1.5);
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main .main__section {
+  background-image: url("/assents/1105079.jpg");
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.main .main__section .section__parrafo {
+  margin-right: 50px;
+  font-size: 60px;
+  color: white;
+}
+.main .main__section .section__parrafo .parrafo__estilos {
+  color: red;
+}
+.main .main__section2 {
+  background-color: black;
+}
+.main .main__section2 #motos {
+  margin-left: 10px;
+  font-size: 30px;
+  color: white;
+}
+.main .main__section2 .section__article {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main .main__section2 .section__article .box {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__section2 .section__article .box .box__img {
+  margin-top: 5px;
+  width: 250px;
+  height: 100%;
 }
 
 * {
