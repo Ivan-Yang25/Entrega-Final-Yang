@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: $color-text-header;
+    border-bottom: 1px solid white;
 
     .div__header { 
         @include sizes;

@@ -1,7 +1,6 @@
-
 /*Extra small devices*/
 @media (min-width: 480px) and (max-width: 708px) {
-    
+
     .header {
         height: 200px;
         grid-template-columns: 1fr;
@@ -13,13 +12,13 @@
                 display: none;
             }
         }
-        
+
 
     }
 
     #section {
         justify-content: center;
-        
+
         #parrafo {
             margin-right: 0px;
             text-align: center;
@@ -45,15 +44,47 @@
         }
     }
 
+    //Localidad
 
-};
+    .section__article-2 {
+        grid-template-columns: 1fr !important;
+
+        .iframe {
+            width: 300px;
+            order: 2;
+        }
+
+        .box {
+            order: 1;
+        }
+    }
+
+    //Fin localidad
+
+    //inicio Accesorios
+
+    #article-3 {
+        grid-template-columns: repeat(2, 1fr);
+        border: none;
+        gap: 5px;
+        padding: 0px;
+
+        .caja {
+            width: 230px;
+        }
+    }
+
+
+}
+
+;
 
 /*Small tablets*/
 @media (min-width: 708px) and (max-width: 991px) {
-   
+
     #section {
         justify-content: center;
-        
+
         #parrafo {
             margin: 0px;
             text-align: center;
@@ -73,11 +104,35 @@
             }
         }
     }
-};
+
+    //Localidad 
+
+
+
+    .iframe {
+        width: 300px;
+    }
+
+    //Fin localidad
+
+    //Inicio Accesorios
+
+    #article-3 {
+        gap: 10px;
+        padding: 0px;
+        border: none;
+
+        .caja {
+            width: 200px;
+        }
+    }
+}
+
+;
 
 /*Large tablets/Laptops*/
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+
     #article-queries {
         grid-template-columns: repeat(3, 1fr);
 
@@ -90,12 +145,18 @@
             }
         }
     }
-};
+
+    .iframe {
+        width: 400px;
+    }
+}
+
+;
 
 /*Desktop*/
 @media (min-width: 1200px) and (max-width: 1919px) {
 
-    /*No fue necesario efectuar cambios*/
-    
-};
-
+    .iframe {
+        width: 500px;
+    }
+}
