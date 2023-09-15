@@ -2,11 +2,16 @@
 
 @import 'header';
 @import 'main';
-@import 'footer';
 @import 'media-queries';
+@import 'footer';
+
 
 * {
     margin: 0px auto;
     padding: 0px auto;
+    font-family: 'Anton', sans-serif;
 }
 
+body {
+    background-color: black;
+}

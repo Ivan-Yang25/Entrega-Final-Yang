@@ -1,0 +1,101 @@
+
+/*Extra small devices*/
+@media (min-width: 480px) and (max-width: 708px) {
+    
+    .header {
+        height: 200px;
+        grid-template-columns: 1fr;
+
+        .div__header {
+            justify-content: center;
+
+            .header__img {
+                display: none;
+            }
+        }
+        
+
+    }
+
+    #section {
+        justify-content: center;
+        
+        #parrafo {
+            margin-right: 0px;
+            text-align: center;
+        }
+    }
+
+    #motos {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    #article-queries {
+        grid-template-columns: 1fr;
+
+        .card {
+            width: 350px;
+
+            .card-img-top {
+
+                width: 250px;
+            }
+        }
+    }
+
+
+};
+
+/*Small tablets*/
+@media (min-width: 708px) and (max-width: 991px) {
+   
+    #section {
+        justify-content: center;
+        
+        #parrafo {
+            margin: 0px;
+            text-align: center;
+        }
+    }
+
+
+    #article-queries {
+        grid-template-columns: repeat(2, 1fr);
+
+        .card {
+            width: 320px;
+
+            .card-img-top {
+
+                width: 250px;
+            }
+        }
+    }
+};
+
+/*Large tablets/Laptops*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    #article-queries {
+        grid-template-columns: repeat(3, 1fr);
+
+        .card {
+            width: 300px;
+
+            .card-img-top {
+
+                width: 250px;
+            }
+        }
+    }
+};
+
+/*Desktop*/
+@media (min-width: 1200px) and (max-width: 1919px) {
+
+    /*No fue necesario efectuar cambios*/
+    
+};
+
