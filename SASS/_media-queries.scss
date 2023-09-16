@@ -74,6 +74,17 @@
         }
     }
 
+    //Fin de contacto
+
+    #carousel-contact {
+        display: none;
+    }
+
+    #form {
+        position: static;
+        display: grid;
+    }
+
 
 }
 
@@ -107,8 +118,6 @@
 
     //Localidad 
 
-
-
     .iframe {
         width: 300px;
     }
@@ -125,6 +134,14 @@
         .caja {
             width: 200px;
         }
+    }
+
+    //Fin de accesorios
+
+    //Inicio de Contacto
+    #form {
+        top: 35%;
+        left: 23%;
     }
 }
 
@@ -149,6 +166,11 @@
     .iframe {
         width: 400px;
     }
+
+    #form {
+        top: 35%;
+        left: 30%;
+    }
 }
 
 ;
@@ -159,4 +181,5 @@
     .iframe {
         width: 500px;
     }
+
 }

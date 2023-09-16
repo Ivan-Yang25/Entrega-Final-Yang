@@ -141,7 +141,7 @@
 }
 .main-2 .main-2__section .main-2__div {
   width: 100%;
-  background-image: url(/assents/796902.jpg);
+  background-image: url(../assents/796902.jpg);
   background-size: cover;
 }
 .main-2 .main-2__section .main-2__div .section__article-2 {
@@ -169,7 +169,7 @@
   transform: scale(1.5);
 }
 .main-2 .main-2__section .bk-2 {
-  background-image: url(/assents/132695.jpg);
+  background-image: url(../assents/132695.jpg);
 }
 
 .main-3 {
@@ -214,6 +214,52 @@
 .main-3 .main-3__section .section__article-3 .caja .btn {
   background-color: red;
   border: 1px solid red;
+}
+
+.main-4 {
+  padding-top: 10%;
+  width: 100%;
+}
+.main-4 .main-4__section {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.main-4 .main-4__section .section__titulo-4 {
+  color: white;
+  margin-bottom: 10%;
+}
+.main-4 .main-4__section .carousel {
+  height: 700px;
+  width: 90vw;
+}
+.main-4 .main-4__section .carousel img {
+  height: 700px;
+  width: 1000px;
+}
+.main-4 .main-4__section .formulario {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  z-index: 2;
+}
+.main-4 .main-4__section .formulario .formulario__div {
+  width: 400px;
+  height: 500px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.8);
+  border-radius: 10px;
+}
+.main-4 .main-4__section .formulario .formulario__div .div__ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.main-4 .main-4__section .formulario .formulario__div .div__ul li {
+  margin: 10px;
 }
 
 /*Extra small devices*/
@@ -268,6 +314,13 @@
   #article-3 .caja {
     width: 230px;
   }
+  #carousel-contact {
+    display: none;
+  }
+  #form {
+    position: static;
+    display: grid;
+  }
 }
 /*Small tablets*/
 @media (min-width: 708px) and (max-width: 991px) {
@@ -298,6 +351,10 @@
   #article-3 .caja {
     width: 200px;
   }
+  #form {
+    top: 35%;
+    left: 23%;
+  }
 }
 /*Large tablets/Laptops*/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -312,6 +369,10 @@
   }
   .iframe {
     width: 400px;
+  }
+  #form {
+    top: 35%;
+    left: 30%;
   }
 }
 /*Desktop*/

@@ -199,3 +199,62 @@
         }
     }
 }
+
+//Fin de Accesorios
+
+//Inicio de Contacto
+
+.main-4 {
+    padding-top: 10%;
+    width: 100%;
+    .main-4__section {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .section__titulo-4 {
+            color: white;
+            margin-bottom: 10%;
+        }
+
+        .carousel {
+            height: 700px;
+            width: 90vw;
+
+            img {
+                height: 700px;
+                width: 1000px;
+            }
+        }
+
+        .formulario {
+            position: absolute;
+            top: 90%;
+            left: 35%;
+            z-index: 2;
+
+            .formulario__div {
+                width: 400px;
+                height: 500px;
+                display: grid;
+                align-items: center;
+                text-align: center;
+                background-color: #cccc;
+                border-radius: 10px;
+
+                .div__ul {
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px;
+
+                    li {
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+}
